@@ -1,7 +1,5 @@
 import { useState } from "react";
-
 import React from "react";
-
 var axios = require("axios");
 
 function MyControlledInput() {
@@ -22,10 +20,6 @@ function MyControlledInput() {
       method: "post",
       url: "https://driver-vehicle-licensing.api.gov.uk/vehicle-enquiry/v1/vehicles",
       headers: {
-        "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers":
-          "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
         "x-api-key": key,
         "Content-Type": "application/json",
       },
